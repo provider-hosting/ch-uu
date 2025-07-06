@@ -1,0 +1,123 @@
+/*
+Last Modified: 2025-07-03 07:08
+Contact Us: https://www.maxim.pe.kr
+© 2025 Maxim. All Rights Reserved.
+*/
+
+/* =================================================================
+   Theme: CHUU - Pastel Dream
+================================================================= */
+
+:root {
+    /* -- Light Mode: Pastel Dream Theme -- */
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #FEF7F9; /* Very Soft Pink */
+    --bg-navbar-animated: linear-gradient(45deg, #fef7f9, #ffffff, #fef7f9, #fdeff2);
+    --bg-card: #FFFFFF;
+    --bg-cta-button: #E0BBE4; /* Pastel Lavender */
+    --bg-cta-button-hover: #D2AAE1;
+    --bg-nav-icon-button: #FFB5C5; /* Sweet Pink */
+    --bg-nav-icon-button-hover: #FFACC2;
+    --bg-lang-switcher: #FFF4E0; /* Soft Cream */
+    --bg-lang-switcher-hover: #FFECCF;
+    --bg-lang-switcher-active: #E0BBE4;
+
+    --text-primary: #614B51; /* Deep Rose Brown */
+    --text-secondary: #8C7B80;
+    --text-headings: #C98696; /* Dusty Rose */
+    --text-accent: #957DAD; /* Deeper Lavender */
+    --text-accent-hover: #8568A4;
+    --text-navbar: #614B51;
+    --text-lang-switcher: #614B51; /* Changed for visibility */
+    --text-lang-switcher-active: #FFFFFF;
+    --text-nav-icon-button: #FFFFFF;
+    --text-cta-button: #FFFFFF;
+    --text-section-title-icon: #F4C2D4; /* Light Pink */
+    
+    --border-card: #FCEFF2;
+    --border-navbar-bottom: #FCEFF2;
+    --border-section-heading-underline: #E0BBE4;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* -- Dark Mode: Pastel Dream Theme -- */
+        --bg-primary: #3B3037; /* Deep, warm purple/brown */
+        --bg-secondary: #4D3F47; /* Muted magenta */
+        --bg-navbar-animated: linear-gradient(45deg, #4d3f47, #3b3037, #4d3f47, #5c4e56);
+        --bg-card: #4A3E45;
+        --bg-cta-button: #E0BBE4; /* Lavender pop */
+        --bg-cta-button-hover: #E9CBED;
+        --bg-nav-icon-button: #FFB5C5; /* Sweet Pink pop */
+        --bg-lang-switcher: #5C4E56;
+        --bg-lang-switcher-hover: #705F6A;
+        --bg-lang-switcher-active: #E0BBE4;
+
+        --text-primary: #F5EAF0;
+        --text-secondary: #D9CAD4;
+        --text-headings: #F4C2D4; /* Bright but soft pink */
+        --text-accent: #E0BBE4;
+        --text-navbar: #F5EAF0;
+        --text-lang-switcher: #F5EAF0;
+        --text-lang-switcher-active: #3B3037;
+        --text-cta-button: #3B3037;
+        --text-nav-icon-button: #3B3037;
+        --text-section-title-icon: #7A6A85;
+
+        --border-card: #5C4E56;
+        --border-navbar-bottom: #5C4E56;
+        --border-section-heading-underline: #E0BBE4;
+    }
+}
+
+/* =================================================================
+   Custom Styles for CHUU Site
+================================================================= */
+body, .ui-card-title, .process-title {
+    font-family: 'Gowun Dodum', sans-serif;
+    font-weight: 400;
+}
+
+#home .home-logo {
+    font-family: 'Fredoka One', cursive;
+    /* Responsive font size using clamp() */
+    font-size: clamp(5rem, 3.5rem + 7.5vw, 8rem);
+    font-weight: 400; /* This font has a single weight. */
+    line-height: 1;
+    text-transform: uppercase; /* Uppercase for a stronger logo presence. */
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+#home .content .subtitle {
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+.section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Alternating Section Backgrounds (Reverted to 2 patterns) */
+main > .section:nth-of-type(even) { 
+    background-color: var(--bg-secondary); 
+}
+
+/* Custom style for price in cookie cards */
+.ui-card .price-info .price-label {
+    font-size: 0.9rem;
+}
+
+/* Custom styles for product details */
+.product-details {
+    padding: 0; /* Remove default padding from v1.css */
+    margin-block-start: 30px; /* Add top margin */
+}
+
+/* Ensure product option values with <br> are displayed correctly */
+.product-item .item-value {
+    line-height: 1.6;
+}
