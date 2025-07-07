@@ -42,8 +42,6 @@ const languages = {
         'home_subtitle': 'Baking your sweet moments',
         'overview_title': 'With Love, CHUU',
         'overview_desc': 'We make all your days as special as an anniversary with our heartfelt cakes and cookies. CHUU presents a one-of-a-kind sweetness with fresh ingredients and creative designs.',
-        'promotion_title': 'Promotion',
-        'promotion_desc': 'Check out the special offer prepared by CHUU!',
         'promotion_01_title': 'Get a Random Cookie Box with Cake Purchase',
         'promotion_01_desc': 'Customers who purchase any whole cake will receive a random box of CHUU\'s popular handmade cookies as a gift.',
         'cakes_title': 'Custom Cakes',
@@ -137,9 +135,6 @@ const languages = {
         'home_subtitle': '당신의 달콤한 순간을 만들어요',
         'overview_title': '사랑을 담아, CHUU',
         'overview_desc': '정성껏 만든 케이크와 쿠키로 당신의 모든 날을 기념일처럼 특별하게 만들어 드립니다. CHUU는 신선한 재료와 독창적인 디자인으로 세상에 단 하나뿐인 달콤함을 선물합니다.',
-        'promotion_title': '프로모션',
-
-        'promotion_desc': 'CHUU에서 준비한 특별한 혜택을 만나보세요!',
         'promotion_01_title': '케이크 구매 시 랜덤 쿠키 박스 증정',
         'promotion_01_desc': '모든 홀케이크를 구매하시는 고객님께 CHUU의 인기 수제 쿠키가 담긴 랜덤 박스를 선물로 드립니다.',
         'cakes_title': '주문 제작 케이크',
