@@ -1,19 +1,17 @@
-<!DOCTYPE html>
 <!-- 
-    Last Modified: 2025-07-07 07:35
+    Last Modified: 2025-07-09 07:25
     Author: Maxim
     Contact: https://www.maxim.pe.kr
     License: © 2025 Maxim. All Rights Reserved.
 -->
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- 초기 텍스트와 data-lang을 함께 사용 -->
     <title data-lang="site_title">CHUU - Custom Cakes & Cookies</title>
     
-    <!-- meta 태그는 content에 직접 작성 (영문) -->
     <meta name="description" content="Discover special custom cakes and handmade cookies from CHUU that make every moment a sweet gift.">
     <meta name="keywords" content="lettering cake, photo cake, 3d cake, handmade cookies, custom cake, anniversary cake, gift cookies, CHUU">
     <meta name="naver-site-verification" content="9b4aeffcb9df5db39b6d3e3a3a5bb94501e80783" />
@@ -59,6 +57,7 @@
             <div class="slide" style="background-image:url('./section/home/02.jpg')"></div>
             <div class="slide" style="background-image:url('./section/home/03.jpg')"></div>
         </div>
+        <canvas id="heart-canvas"></canvas>
         <div class="overlay has-dot-pattern"></div>
         <div class="content">
             <h1 class="home-logo" data-lang="logo_text"></h1>
@@ -68,17 +67,14 @@
     </header>
 
     <main>
-        <!-- Section: Overview -->
+        <!-- main content remains the same -->
         <section id="overview" class="section fade-in-section">
             <div class="container">
                 <h2><span class="material-symbols-outlined">cake</span><span data-lang="overview_title"></span></h2>
                 <p class="section-description" data-lang="overview_desc"></p>
-                <!-- 데모 사이트 안내 문구 추가 -->
                 <p class="disclaimer-text" data-lang="demo_msg_disclaimer"></p>
             </div>
         </section>
-
-        <!-- Section: Promotion -->
         <section id="promotion" class="section fade-in-section section-dynamic" style="background-image: url('./section/promotion/bg.jpg');">
             <div class="overlay has-dot-pattern"></div>
             <div class="container">
@@ -96,13 +92,10 @@
                 </div>
             </div>
         </section>
-
-        <!-- Section: Cookies -->
         <section id="cookies" class="section fade-in-section section-divider to-secondary">
             <div class="container">
                 <h2><span class="material-symbols-outlined">cookie</span><span data-lang="cookies_title"></span></h2>
                 <p class="section-description" data-lang="cookies_desc"></p>
-                <!-- 콘텐츠 슬라이더 적용 -->
                 <div class="content-slider-container js-content-slider">
                     <div class="slider-wrapper">
                         <div class="slider-item">
@@ -289,8 +282,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Section: Cakes -->
         <section id="cakes" class="section fade-in-section section-divider to-primary">
             <div class="container">
                 <h2><span class="material-symbols-outlined">brush</span><span data-lang="cakes_title"></span></h2>
@@ -345,8 +336,6 @@
                 </div>
             </div>
         </section>
-        
-        <!-- Section: Process -->
         <section id="process" class="section fade-in-section section-divider to-secondary">
             <div class="container">
                 <h2><span class="material-symbols-outlined">list_alt</span><span data-lang="process_title"></span></h2>
@@ -375,8 +364,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Section: Media -->
         <section id="media" class="section fade-in-section section-divider to-primary">
             <div class="container">
                 <h2><span class="material-symbols-outlined">smart_display</span><span data-lang="media_title"></span></h2>
@@ -390,8 +377,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Section: Location -->
         <section id="location" class="section fade-in-section section-divider to-secondary">
             <div class="container">
                 <h2><span class="material-symbols-outlined">location_on</span><span data-lang="location_title"></span></h2>
@@ -403,8 +388,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Section: Contact -->
         <section id="contact" class="section fade-in-section section-divider to-primary">
             <div class="container">
                 <h2><span class="material-symbols-outlined">contact_mail</span><span data-lang="contact_title"></span></h2>
@@ -424,12 +407,9 @@
                         <span data-lang="contact_button"></span>
                     </a>
                 </div>
-                <!-- 데모 사이트 안내 문구 추가 -->
                 <p class="disclaimer-text" data-lang="demo_msg_information"></p>
             </div>
         </section>
-
-        <!-- Section: Request -->
         <section id="request" class="section fade-in-section">
             <div class="container">
                 <h2><span class="material-symbols-outlined">auto_awesome</span><span data-lang="demo_request_title"></span></h2>
@@ -457,5 +437,6 @@
     <a href="#home" id="to-top-btn" class="hidden">
         <span class="material-symbols-outlined">arrow_upward</span>
     </a>
+    <script src="./lay.js" defer></script>
 </body>
 </html>
