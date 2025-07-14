@@ -1,11 +1,11 @@
 <!-- 
-    Last Modified: 2025-07-09 07:25
+    Last Modified: 2025-07-14 10:33
     Author: Maxim
     Contact: https://www.maxim.pe.kr
     License: © 2025 Maxim. All Rights Reserved.
 -->
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,12 +14,14 @@
     
     <meta name="description" content="Discover special custom cakes and handmade cookies from CHUU that make every moment a sweet gift.">
     <meta name="keywords" content="lettering cake, photo cake, 3d cake, handmade cookies, custom cake, anniversary cake, gift cookies, CHUU">
+    <link rel="canonical" href="https://www.chuu.kr/">
+
     <meta name="naver-site-verification" content="9b4aeffcb9df5db39b6d3e3a3a5bb94501e80783" />
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.chuu.kr">
+    <meta property="og:url" content="https://www.chuu.kr/">
     <meta property="og:title" content="CHUU - Custom Cakes & Cookies">
     <meta property="og:description" content="Discover special custom cakes and handmade cookies from CHUU that make every moment a sweet gift.">
-    <meta property="og:image" content="./section/home/01.jpg">
+    <meta property="og:image" content="https://www.chuu.kr/section/home/01.jpg">
 
     <!-- Stylesheets & Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Poppins:wght@400;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
@@ -32,16 +34,41 @@
     <script src="./lang.js" defer></script>
     <script src="https://onepage.maxim.pe.kr/v1/v1_lang.js" defer></script>
     <script src="https://onepage.maxim.pe.kr/v1/v1.js" defer></script>
+
+    <!-- SEO: JSON-LD for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Bakery",
+      "name": "CHUU",
+      "image": "https://www.chuu.kr/section/home/01.jpg",
+      "description": "We make all your days as special as an anniversary with our heartfelt cakes and cookies. CHUU presents a one-of-a-kind sweetness with fresh ingredients and creative designs.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "633 W 5th St",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA",
+        "postalCode": "90071",
+        "addressCountry": "USA"
+      },
+      "url": "https://www.chuu.kr/",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "chuu@chuu.kr",
+        "contactType": "customer service"
+      }
+    }
+    </script>
 </head>
 <body>
     <!-- Section: Navbar -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="#home" class="logo" data-lang="logo_text"></a>
+            <a href="#home" class="logo" data-lang="logo_text">CHUU</a>
             <div class="nav-buttons">
                 <div id="lang-switcher">
-                    <button data-lang-set="ko" class="active">KR</button>
-                    <button data-lang-set="en">EN</button>
+                    <button data-lang-set="ko">KR</button>
+                    <button data-lang-set="en" class="active">EN</button>
                 </div>
                 <a href="#contact" class="nav-icon-button" aria-label="Contact Us">
                     <span class="material-symbols-outlined">mail</span>
@@ -60,18 +87,17 @@
         <canvas id="heart-canvas"></canvas>
         <div class="overlay has-dot-pattern"></div>
         <div class="content">
-            <h1 class="home-logo" data-lang="logo_text"></h1>
-            <p class="subtitle" data-lang="home_subtitle"></p>
+            <h1 class="home-logo">CHUU</h1>
+            <p class="subtitle" data-lang="home_subtitle">Baking your sweet moments</p>
         </div>
         <div class="slide-indicators"></div>
     </header>
 
     <main>
-        <!-- main content remains the same -->
         <section id="overview" class="section fade-in-section">
             <div class="container">
-                <h2><span class="material-symbols-outlined">cake</span><span data-lang="overview_title"></span></h2>
-                <p class="section-description" data-lang="overview_desc"></p>
+                <h2><span class="material-symbols-outlined">cake</span><span data-lang="overview_title">With Love, CHUU</span></h2>
+                <p class="section-description" data-lang="overview_desc">We make all your days as special as an anniversary with our heartfelt cakes and cookies. CHUU presents a one-of-a-kind sweetness with fresh ingredients and creative designs.</p>
                 <p class="disclaimer-text" data-lang="demo_msg_disclaimer"></p>
             </div>
         </section>
@@ -81,7 +107,7 @@
                 <div class="card-grid grid-1">
                     <div class="ui-card horizontal">
                         <div class="ui-card-image-wrapper">
-                            <img src="./section/promotion/01.jpg" alt="Promotion Event" class="ui-card-image">
+                            <img src="./section/promotion/01.jpg" alt="A promotional image showing a gift box of cookies next to a beautifully decorated cake" class="ui-card-image">
                         </div>
                         <div class="ui-card-content">
                             <span class="ui-card-tag" data-lang="promotion_tag_gift"></span>
@@ -100,7 +126,7 @@
                     <div class="slider-wrapper">
                         <div class="slider-item">
                             <div class="ui-card">
-                                <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cookies/01.jpg" alt="Chocolate Chip Cookies" class="ui-card-image"></div>
+                                <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cookies/01.jpg" alt="A close-up of classic chocolate chip cookies" class="ui-card-image"></div>
                                 <div class="ui-card-content">
                                     <h3 class="ui-card-title" data-lang="cookies_01_title"></h3>
                                     <p class="ui-card-description" data-lang="cookies_01_desc"></p>
@@ -119,7 +145,7 @@
                         </div>
                         <div class="slider-item">
                             <div class="ui-card">
-                                <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cookies/02.jpg" alt="Earl Grey Tea Cookies" class="ui-card-image"></div>
+                                <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cookies/02.jpg" alt="Delicate Earl Grey tea cookies with a subtle tea leaf speckle" class="ui-card-image"></div>
                                 <div class="ui-card-content">
                                     <h3 class="ui-card-title" data-lang="cookies_02_title"></h3>
                                     <p class="ui-card-description" data-lang="cookies_02_desc"></p>
@@ -138,7 +164,7 @@
                         </div>
                         <div class="slider-item">
                             <div class="ui-card">
-                                <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cookies/03.jpg" alt="Cheddar Cheese Crackers" class="ui-card-image"></div>
+                                <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cookies/03.jpg" alt="Savory cheddar cheese crackers with a golden-brown finish" class="ui-card-image"></div>
                                 <div class="ui-card-content">
                                     <h3 class="ui-card-title" data-lang="cookies_03_title"></h3>
                                     <p class="ui-card-description" data-lang="cookies_03_desc"></p>
@@ -157,7 +183,7 @@
                         </div>
                         <div class="slider-item">
                             <div class="ui-card">
-                                <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cookies/04.jpg" alt="Matcha White Chocolate Cookie" class="ui-card-image"></div>
+                                <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cookies/04.jpg" alt="Vibrant green matcha cookies with white chocolate chunks" class="ui-card-image"></div>
                                 <div class="ui-card-content">
                                     <h3 class="ui-card-title" data-lang="cookies_04_title"></h3>
                                     <p class="ui-card-description" data-lang="cookies_04_desc"></p>
@@ -176,7 +202,7 @@
                         </div>
                         <div class="slider-item">
                             <div class="ui-card">
-                                <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cookies/05.jpg" alt="Red Velvet Cream Cheese Cookie" class="ui-card-image"></div>
+                                <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cookies/05.jpg" alt="Rich red velvet cookies with a creamy cheese filling" class="ui-card-image"></div>
                                 <div class="ui-card-content">
                                     <h3 class="ui-card-title" data-lang="cookies_05_title"></h3>
                                     <p class="ui-card-description" data-lang="cookies_05_desc"></p>
@@ -195,7 +221,7 @@
                         </div>
                         <div class="slider-item">
                             <div class="ui-card">
-                                <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cookies/06.jpg" alt="Oreo S'mores Cookie" class="ui-card-image"></div>
+                                <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cookies/06.jpg" alt="Decadent Oreo s'mores cookies with melted marshmallow" class="ui-card-image"></div>
                                 <div class="ui-card-content">
                                     <h3 class="ui-card-title" data-lang="cookies_06_title"></h3>
                                     <p class="ui-card-description" data-lang="cookies_06_desc"></p>
@@ -214,7 +240,7 @@
                         </div>
                         <div class="slider-item">
                             <div class="ui-card">
-                                <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cookies/07.jpg" alt="Lemon Delight Cookie" class="ui-card-image"></div>
+                                <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cookies/07.jpg" alt="Bright lemon delight cookies with a sugar glaze" class="ui-card-image"></div>
                                 <div class="ui-card-content">
                                     <h3 class="ui-card-title" data-lang="cookies_07_title"></h3>
                                     <p class="ui-card-description" data-lang="cookies_07_desc"></p>
@@ -233,7 +259,7 @@
                         </div>
                         <div class="slider-item">
                             <div class="ui-card">
-                                <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cookies/08.jpg" alt="Peanut Butter Pretzel Cookie" class="ui-card-image"></div>
+                                <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cookies/08.jpg" alt="Sweet and salty peanut butter pretzel cookies" class="ui-card-image"></div>
                                 <div class="ui-card-content">
                                     <h3 class="ui-card-title" data-lang="cookies_08_title"></h3>
                                     <p class="ui-card-description" data-lang="cookies_08_desc"></p>
@@ -252,7 +278,7 @@
                         </div>
                         <div class="slider-item">
                             <div class="ui-card">
-                                <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cookies/09.jpg" alt="Injeolmi Soboro Cookie" class="ui-card-image"></div>
+                                <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cookies/09.jpg" alt="Traditional Korean Injeolmi soboro cookies with a crumbly topping" class="ui-card-image"></div>
                                 <div class="ui-card-content">
                                     <h3 class="ui-card-title" data-lang="cookies_09_title"></h3>
                                     <p class="ui-card-description" data-lang="cookies_09_desc"></p>
@@ -288,7 +314,7 @@
                 <p class="section-description" data-lang="cakes_desc"></p>
                 <div class="card-grid">
                     <div class="ui-card">
-                        <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cakes/01.jpg" alt="Lettering Cake" class="ui-card-image"></div>
+                        <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cakes/01.jpg" alt="A beautiful lettering cake with a custom message" class="ui-card-image"></div>
                         <div class="ui-card-content">
                             <h3 class="ui-card-title" data-lang="cakes_lettering_title"></h3>
                             <p class="ui-card-description" data-lang="cakes_lettering_desc"></p>
@@ -302,7 +328,7 @@
                         </div>
                     </div>
                     <div class="ui-card">
-                        <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cakes/02.jpg" alt="Photo Cake" class="ui-card-image"></div>
+                        <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cakes/02.jpg" alt="A photo cake featuring a printed personal picture" class="ui-card-image"></div>
                         <div class="ui-card-content">
                             <h3 class="ui-card-title" data-lang="cakes_photo_title"></h3>
                             <p class="ui-card-description" data-lang="cakes_photo_desc"></p>
@@ -316,7 +342,7 @@
                         </div>
                     </div>
                     <div class="ui-card">
-                        <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cakes/03.jpg" alt="3D Cake" class="ui-card-image"></div>
+                        <div class="ui-card-image-wrapper js-lightbox-trigger"><img src="./section/cakes/03.jpg" alt="An impressive 3D cake shaped like a popular character" class="ui-card-image"></div>
                         <div class="ui-card-content">
                             <h3 class="ui-card-title" data-lang="cakes_3d_title"></h3>
                             <p class="ui-card-description" data-lang="cakes_3d_desc"></p>
