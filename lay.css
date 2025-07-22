@@ -168,16 +168,6 @@ section#request {
    opacity: 1;
 }
 
-/* --- Heart Canvas Styles --- */
-#heart-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2; /* 슬라이드 위, 오버레이 아래 */
-}
-
 /* z-index for home elements to ensure proper layering */
 #home .overlay { z-index: 1; }
 #home .content { z-index: 3; }
